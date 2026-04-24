@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora Hídrica</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Calculadora Hídrica</h1>
+
+  <label>Entrada (ml)</label>
+  <input id="entrada" type="number">
+
+  <label>Saída (ml)</label>
+  <input id="saida" type="number">
+
+  <label>Dieta (ml)</label>
+  <input id="dieta" type="number">
+
+  <label>Peso (kg)</label>
+  <input id="peso" type="number">
+
+  <label>Tipo de leite</label>
+  <select id="leiteTipo">
+    <option value="leiteHumano">Leite Humano</option>
+    <option value="nan1">NAN 1</option>
+    <option value="preNan">Pré NAN</option>
+    <option value="infatrini">Infatrini</option>
+    <option value="agua">Água</option>
+  </select>
+
+  <button id="btnCalcular">Calcular</button>
+
+  <h2>Resultados</h2>
+  <p>Balanço total: <span id="balancoTotal"></span></p>
+  <p>Balanço hídrico: <span id="balancoHidrico"></span></p>
+  <p>Diurese: <span id="diurese"></span></p>
+  <p>Oferta hídrica: <span id="ofertaHidrica"></span></p>
+  <p>Oferta calórica: <span id="ofertaCalorica"></span></p>
+  <p>Oferta calórica (incremental): <span id="ofertaCaloricaInc"></span></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
